@@ -44,9 +44,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px;
     background-color: white;
     border-radius: 5px;
+    padding-left: 20px;
 }
 .signin input,.signup input,.admin input{
     padding: 10px;
@@ -136,7 +138,7 @@ div h5{
         width: 100%;
     }
     .signin input[type=submit],.signup input[type=submit],.admin input[type=submit]{
-        width: 112%;
+        width: 109%;
     }
     .signin p,.signup p{
         font-size: 12px;
@@ -148,7 +150,7 @@ div h5{
         font-size: 13px;
     }
     .main{
-        height: 260vh;
+        height: 400vh;
     }
     .main input{
         width: 70%;
