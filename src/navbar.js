@@ -6,7 +6,7 @@ function Nav()
 {
     return(
         <div className="navbar">
-            <h1>e-Read</h1>
+            <h1>e-Book</h1>
             <div className="right">
                 <Link style={{textDecoration:'none',color:"black"}} to="/home"><li>Home</li></Link>
                 <Link to="/signin"><button className="signdirect">{auth?.currentUser?("Logout"):("Login")}</button></Link>
