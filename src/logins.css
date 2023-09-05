@@ -237,7 +237,7 @@ div h5{
     }
     .main{
         height: 300vh;
-        width: 100%;
+        width: 105%;
     }
     .main .searchTerm{
         margin-left: 20px;
@@ -246,7 +246,7 @@ div h5{
         right: 10px;
     }
     .main input{
-        width: 95%;
+        width: 125%;
     }
     .main input::placeholder{
         font-size: 14px;
