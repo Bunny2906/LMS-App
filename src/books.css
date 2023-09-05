@@ -54,9 +54,14 @@
     grid-template-columns: repeat(5,1fr);
     margin-top: 90px;
 }
-@media (max-width:480px){
+@media only screen and (max-width:700px){
     .booklist{
+        display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 0.8fr repeat(21,1fr);
+        padding-left: 0;
+    }
+    .booklist h1{
+        font-size: 26px;
+        grid-area: 1/1/2/3;
     }
 }
