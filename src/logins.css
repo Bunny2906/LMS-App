@@ -10,7 +10,7 @@ body{
     top: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     background-color: white;
     box-shadow: 2px 3px 10px grey;
@@ -205,6 +205,7 @@ div h5{
 @media (max-width:480px){
     .navbar{
         flex-direction: column;
+        width: 100%;
     }
     .navbar h1{
         margin-left: 0px;
@@ -227,15 +228,20 @@ div h5{
     .right{
         margin-right: 0px;
     }
+    .right li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .right button{
         font-size: 13px;
+        margin: 10px;
     }
     .main{
         height: 300vh;
         width: 110%;
     }
     .main input{
-        width: 95%;
+        width: 70%;
     }
     .main input::placeholder{
         font-size: 14px;
