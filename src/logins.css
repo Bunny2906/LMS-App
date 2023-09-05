@@ -44,18 +44,18 @@ body{
     justify-content: space-between;
     margin-right: 20px;
 }
-.right li{
+.right li,.right2 li{
     list-style-type: none;
     font-size: 20px;
     padding: 5px;
     position: relative;
 }
-.right li:hover{
+.right li:hover,.right2 li:hover{
     transition: all 0.5s ease;
     font-weight: 900;
     color: rgb(43, 41, 41);
 }
-.right li::after{
+.right li::after,.right2 li::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -65,12 +65,12 @@ body{
     background: rgb(14, 14, 14);
     width: 0;
 }
-.right li:hover::after{
+.right li:hover::after,.right2 li:hover::after{
     width: 100%;
     left: 0;
     right: auto;
 }
-.right button{
+.right button,.right2 button{
     padding: 10px 16px;
     color: white;
     background-color: black;
