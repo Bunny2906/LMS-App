@@ -234,13 +234,12 @@ div h5{
     }
     .main .searchTerm{
         margin-left: 20px;
-        width: 80%;
     }
     .searchTerm button{
         right: 10px;
     }
-    .main input{
-        max-width: 700px;
+    .searchTerm input{
+        width: 85%;
     }
     .main input::placeholder{
         font-size: 14px;
