@@ -1,18 +1,42 @@
+import React ,{useState,useContext,useEffect,useCallback} from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ReactDOM } from 'react-dom';
 import Nav from './navbar';
+import Footer from './footer'
 import image1 from './images/image1.jpg'
 import image2 from './images/image2.jpg'
 import image3 from './images/image3.jpg'
 import image4 from './images/image4.jpg'
 import image5 from './images/image5.jpg'
 import image6 from './images/image6.jpg'
-function home()
+import { auth } from './firebase';
+const URL = "https://openlibrary.org/search.json?title=";
+function Home()
 {
-    return(
-        
+    const navigate = useNavigate();
+    useEffect(()=>{
+        if(!localStorage.getItem('token'))
+        {
+            console.log("invalid")
+            navigate('/signin');
+        }
+    },[])
+    const [searchItem,setSearchItem] = useState("");
+    const handleChange = (e)=>{
+        setSearchItem(e.target.value);
+    }
+    const fetchBooks = (e)=>{
+        localStorage.setItem('searchInput',searchItem);
+        navigate('/booklist')
+    }
+    return( 
         <div className='home'>
-            <Nav />
             <div className='main'>
-                <input type='text' className='bookinput' placeholder='Search for books'></input>
+                <h3 className='wlcmnote'>{"Welcome !!"}</h3>
+                <div className='searchTerm'>
+                    <input type='text' className='bookinput' placeholder='Search for books' onChange={handleChange}></input>
+                    <button onClick={()=>{fetchBooks()}}className='searchBtn'>Search</button>  
+                </div>
                 <h1>Popular Books</h1>
                 <div className='popbooks'>
                     <div className='book1'>
@@ -41,7 +65,8 @@ function home()
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
-export default home;
+export default Home;
