@@ -29,18 +29,11 @@ body{
 .navbar h1,.navbar2 h1{
     margin-left: 50px;
 }
-.right{
+.right,.right2{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-right: 20px;
-}
-.right2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin-right: 20px;
 }
 .right li,.right2 li{
@@ -208,6 +201,9 @@ div h5{
     }
     .navbar h1{
         margin-left: 0px;
+    }
+    .right,.right2{
+        margin-right:0px;
     }
     .signin,.signup,.admin{
         width: 70%;
