@@ -232,9 +232,10 @@ div h5{
     }
     .main{
         height: 300vh;
+        width: 110%;
     }
     .main input{
-        width: 85%;
+        width: 95%;
     }
     .main input::placeholder{
         font-size: 14px;
