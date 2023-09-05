@@ -16,10 +16,28 @@ body{
     box-shadow: 2px 3px 10px grey;
     z-index: 1;
 }
+.navbar2{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 3px 10px grey;
+    z-index: 1;
+}
 .navbar h1{
     margin-left: 50px;
 }
 .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.right2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -189,7 +207,7 @@ div h5{
         flex-direction: column;
     }
     .navbar h1{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     .signin,.signup,.admin{
         width: 70%;
