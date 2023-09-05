@@ -238,11 +238,11 @@ div h5{
         font-size: 15px;
     }
     .main .searchTerm{
-        margin-left: 7px;
+        margin-left: 17px;
         width: 360px;
     }
     .searchTerm button{
-        right: 30px;
+        right: 40px;
     }
     .main input::placeholder{
         font-size: 14px;
