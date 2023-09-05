@@ -204,6 +204,7 @@ div h5{
 @media (max-width:480px){
     .navbar{
         flex-direction: column;
+        justify-content: space-between;
         width: 100%;
     }
     .navbar h1{
@@ -224,16 +225,8 @@ div h5{
     .signin p,.signup p{
         font-size: 12px;
     }
-    .right{
-        margin-right: 0px;
-    }
-    .right li{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
     .right button{
-        font-size: 13px;
-        margin: 10px;
+        font-size: 15px;
     }
     .main{
         height: 300vh;
