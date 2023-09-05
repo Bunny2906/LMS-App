@@ -203,12 +203,9 @@ div h5{
     color: black;
 }
 @media (max-width:480px){
-    html{
-        zoom: 90%;
-    }
     .navbar{
         flex-direction: column;
-        width: 95%;
+        width: 100%;
     }
     .navbar h1{
         margin-left: 0px;
