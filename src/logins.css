@@ -135,7 +135,7 @@ body{
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px;
+    width: 600px;
 }
 .searchTerm input{
     flex: 1;
@@ -234,6 +234,7 @@ div h5{
     }
     .main .searchTerm{
         margin-left: 20px;
+        width: 80%;
     }
     .searchTerm button{
         right: 10px;
