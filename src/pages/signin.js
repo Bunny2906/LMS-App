@@ -1,14 +1,11 @@
 import React,{useState} from "react";
 import { Link,Routes,Route, useNavigate } from "react-router-dom";
 import {ToastContainer, toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import {auth} from'../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 function Signin()
 {
     const navigate = useNavigate();
-    const signinBtn = document.querySelector('.signinbtn');
-
     const goToHome = ()=>{
         navigate("/home");
         {toast("Login successful");}
@@ -19,8 +16,9 @@ function Signin()
     const submit=(e)=>{
         e.preventDefault();
         signInWithEmailAndPassword(auth,username,password)
-        .then((userCred)=>{console.log(userCred);alert("login success");goToHome();})
+        .then((userCred)=>{console.log(userCred);localStorage.setItem('token',userCred);alert("login success "+auth?.currentUser.displayName+" !!");goToHome();})
         .catch((err)=>{console.log(err);alert("Invalid Email-Id or Password")});
+        
     }
     return(
         <div className="signin">
