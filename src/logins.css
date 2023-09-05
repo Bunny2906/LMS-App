@@ -198,6 +198,7 @@ div h5{
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        background: linear-gradient(120deg,#7fb780,#ec9cc3);
     }
     .navbar h1{
         margin-left: 0px;
