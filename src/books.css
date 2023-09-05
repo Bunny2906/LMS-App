@@ -50,7 +50,6 @@
     border-bottom-right-radius: 5px;
 }
 .favourites{
-    background-color: whitesmoke;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     margin-top: 90px;
