@@ -198,7 +198,6 @@ div h5{
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background: linear-gradient(120deg,#7fb780,#ec9cc3);
     }
     .navbar h1{
         margin-left: 0px;
@@ -240,7 +239,7 @@ div h5{
     }
     .main .searchTerm{
         margin-left: 7px;
-        width: 320px;
+        width: 360px;
     }
     .searchTerm button{
         right: 30px;
