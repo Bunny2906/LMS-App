@@ -243,6 +243,9 @@ div h5{
         height: 300vh;
         width: 100%;
     }
+    .main searchTerm{
+        margin-left: 20px;
+    }
     .main input{
         width: 70%;
     }
