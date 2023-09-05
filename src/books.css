@@ -67,10 +67,9 @@
     }
     .favourites{
         grid-template-columns: repeat(2,1fr);
-        margin-top: 90px;
-        margin: 20px;
+        margin-top: 170px;
     }
-    .favourites book{
+    .favourites .book{
         margin: 10px;
     }
 }
