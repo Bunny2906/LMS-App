@@ -240,10 +240,13 @@ div h5{
         width: 100%;
     }
     .main .searchTerm{
-        /*margin-left: 20px;*/
+        margin-left: 20px;
+    }
+    .searchTerm button{
+        
     }
     .main input{
-        width: 85%;
+        width: 95%;
     }
     .main input::placeholder{
         font-size: 14px;
