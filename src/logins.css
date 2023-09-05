@@ -208,7 +208,7 @@ div h5{
     }
     .navbar{
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
     .navbar h1{
         margin-left: 0px;
@@ -241,7 +241,7 @@ div h5{
     }
     .main{
         height: 300vh;
-        width: 110%;
+        width: 105%;
     }
     .main input{
         width: 70%;
