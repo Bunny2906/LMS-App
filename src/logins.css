@@ -240,7 +240,7 @@ div h5{
         height: 300vh;
         width: 100%;
     }
-    .main searchTerm{
+    .main .searchTerm{
         margin-left: 100px;
     }
     .main input{
