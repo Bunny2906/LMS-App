@@ -204,7 +204,7 @@ div h5{
 }
 @media (max-width:480px){
     html{
-        zoom: 100%;
+        zoom: 90%;
     }
     .navbar{
         flex-direction: column;
