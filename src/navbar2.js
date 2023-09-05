@@ -11,9 +11,9 @@ function Nav()
         navigate("");
     };
     return(
-        <div className="navbar">
+        <div className="navbar2">
             <h1>e-Book</h1>
-            <div className="right">
+            <div className="right2">
                 <Link style={{textDecoration:'none',color:"black"}} to="./"><li>Home</li></Link>
                 <Link to={"./signin"}><button className="signdirect">Login</button></Link>
             </div>    
