@@ -58,6 +58,7 @@
     .booklist{
         grid-template-columns: repeat(2,1fr);
         padding-left: 0;
+        width: 110%;
     }
     .booklist h1{
         font-size: 26px;
@@ -66,5 +67,9 @@
     .favourites{
         grid-template-columns: repeat(2,1fr);
         margin-top: 90px;
+        margin: 20px;
+    }
+    .favourites book{
+        margin: 10px;
     }
 }
