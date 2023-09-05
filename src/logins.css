@@ -201,6 +201,9 @@ div h5{
     }
     .navbar h1{
         margin-left: 0px;
+        margin-top: 0px;
+        height: 40px;
+        background: linear-gradient(120deg,#7fb780,#ec9cc3);
     }
     .navbar2 h1{
         margin-left: 10px;
