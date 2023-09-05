@@ -14,6 +14,7 @@ body{
     width: 100%;
     background-color: white;
     box-shadow: 2px 3px 10px grey;
+    z-index: 1;
 }
 .navbar h1{
     margin-left: 50px;
@@ -27,6 +28,28 @@ body{
 .right li{
     list-style-type: none;
     font-size: 20px;
+    padding: 5px;
+    position: relative;
+}
+.right li:hover{
+    transition: all 0.5s ease;
+    font-weight: 900;
+    color: rgb(43, 41, 41);
+}
+.right li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+    height: 3px;
+    background: rgb(14, 14, 14);
+    width: 0;
+}
+.right li:hover::after{
+    width: 100%;
+    left: 0;
+    right: auto;
 }
 .right button{
     padding: 10px 16px;
@@ -74,19 +97,45 @@ body{
     font-size: 16px;
     margin: 10px;
 }
+.home{
+    height: 100vh;
+}
 .main{
     width: 100%;
     height: 100vh;
     margin-top: 80px;
     background-color: whitesmoke;
+    align-items: center;
 }
-.main input{
+.wlcmnote{
+    margin-top: 0px;
+    padding: 20px;
+}
+.searchTerm{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.searchTerm input{
+    flex: 1;
     width: 40%;
     height: 40px;
     border: 1px solid black;
     border-radius: 30px;
-    margin-top: 30px;
     padding-left: 30px;
+    padding-right: 65px;
+}
+.searchTerm button{
+    padding: 12.6px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    position: relative;
+    right: 50px;
 }
 .main input::placeholder{
     font-size: 18px;
@@ -117,12 +166,21 @@ body{
 div h5{
     margin-top: 5px;
 }
+.logoutpage{
+    margin-top: 100px;
+}
 .footer{
     background-color: rgb(248, 248, 245);
     height: 50px;
     width: 100%;
-    margin-top: 0px;
-    position: fixed;
+    padding: 10px;
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.footer h1{
+    color: black;
 }
 @media (max-width:480px){
     .navbar h1{
@@ -150,7 +208,7 @@ div h5{
         font-size: 13px;
     }
     .main{
-        height: 290vh;
+        height: 400vh;
     }
     .main input{
         width: 70%;
