@@ -231,10 +231,10 @@ div h5{
         font-size: 13px;
     }
     .main{
-        height: 250vh;
+        height: 300vh;
     }
     .main input{
-        width: 70%;
+        width: 85%;
     }
     .main input::placeholder{
         font-size: 14px;
