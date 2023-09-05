@@ -202,6 +202,9 @@ div h5{
     .navbar h1{
         margin-left: 0px;
     }
+    .navbar2 h1{
+        margin-left: 10px;
+    }
     .right,.right2{
         margin-right:0px;
     }
