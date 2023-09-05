@@ -25,7 +25,6 @@ body{
     width: 100%;
     background-color: white;
     box-shadow: 2px 3px 10px grey;
-    z-index: 1;
 }
 .navbar h1{
     margin-left: 50px;
