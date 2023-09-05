@@ -23,6 +23,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-right: 20px;
 }
 .right li{
@@ -95,10 +96,11 @@ body{
 }
 .signin p,.signup p{
     font-size: 16px;
-    margin: 10px;
+    margin: auto;
 }
 .home{
     height: 100vh;
+    width: 100%;
 }
 .main{
     width: 100%;
@@ -128,7 +130,7 @@ body{
     padding-right: 65px;
 }
 .searchTerm button{
-    padding: 12.6px 30px;
+    padding: 12.5px 30px;
     border-radius: 30px;
     font-size: 16px;
     background: black;
@@ -183,11 +185,14 @@ div h5{
     color: black;
 }
 @media (max-width:480px){
+    .navbar{
+        flex-direction: column;
+    }
     .navbar h1{
         margin-left: 10px;
     }
     .signin,.signup,.admin{
-        width: 60%;
+        width: 70%;
     }
     .signin h1,.signup h1,.admin h1{
         font-size: 25px;
@@ -208,7 +213,7 @@ div h5{
         font-size: 13px;
     }
     .main{
-        height: 400vh;
+        height: 250vh;
     }
     .main input{
         width: 70%;
