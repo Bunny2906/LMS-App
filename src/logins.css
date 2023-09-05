@@ -26,7 +26,7 @@ body{
     background-color: white;
     box-shadow: 2px 3px 10px grey;
 }
-.navbar h1{
+.navbar h1,.navbar2 h1{
     margin-left: 50px;
 }
 .right{
