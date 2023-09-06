@@ -10,7 +10,7 @@ const DisplayFavourites = ()=>{
     const URL = `https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${get_eml}.json`;
     useEffect(()=>{
         axios.get(URL).then((response)=>{
-        setBooks(Object.values(response.data));
+        setBooks(Object.values(response.data).reverse());
         console.log(books);
     }).catch((err)=>{console.log(err)});},[URL]);
     const DeleteFavourites = async(book)=>{
