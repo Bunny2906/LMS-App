@@ -2,6 +2,7 @@ import axios from'axios';
 import {auth} from './firebase';
 import './App.css';
 import './logins.css';
+import './books.css';
 import Home from './home';
 import Home2 from './home2';
 import Navbar from './navbar';
@@ -38,6 +39,7 @@ function App() {
             <Route exact path="/signup" element={<Signup />}></Route>
             <Route exact path="/admin" element={<Admin />}></Route>
             <Route exact path="/booklist" element={<BookList />}></Route>
+            <Route exact path="/booklist/:id" element={<BookDetails />}></Route>
             <Route exact path="/favourites" element={<Favourites />}></Route>
           </Routes>  
     </div>
