@@ -54,6 +54,33 @@
     grid-template-columns: repeat(5,1fr);
     margin-top: 90px;
 }
+.bookdetails{
+    width: 80%;
+    margin: 20px;
+    height: 90vh;
+    margin: auto;
+    margin-top: 85px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: 0.1fr;
+    justify-content:space-around;
+}
+.title{
+    grid-area: 1/1/2/3;
+}
+.description{
+    padding: 10px;
+    text-align: justify;
+    justify-content: start;
+    margin: auto;
+    margin-bottom: 190px;
+    margin-right: 50px;
+}
+.bookdetails img{
+    grid-area: 2/1/3/2;
+    margin: auto;
+    margin-bottom: 190px;
 @media only screen and (max-width:700px){
     .booklist{
         grid-template-columns: repeat(2,1fr);
@@ -71,5 +98,26 @@
     }
     .favourites .book{
         margin: 10px;
+    }
+    .bookdetails{
+        width: 95%;
+        height: 110vh;
+        grid-template-columns: 4fr;
+        margin-top: 130px;
+        margin: 130px 10px 10px 10px;
+    }
+    .bookdetails img{
+        grid-area: 2/1/3/3;
+        margin: auto;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .description{
+        width: 90%;
+        text-align: justify;
+        font-size: 100px;
+        grid-area: 3/1/4/3;
+        font-size: 7px;
     }
 }
