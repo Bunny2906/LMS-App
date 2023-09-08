@@ -11,6 +11,7 @@ import Signin from './pages/signin';
 import Signup from './pages/signup';
 import Admin from './pages/admin';
 import BookList from './booklist';
+import BookDetails from './bookdetails';
 import Favourites from './favourites';
 import Footer from './footer';
 import {Route,Routes,BrowserRouter,Switch} from 'react-router-dom';
