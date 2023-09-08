@@ -1,4 +1,5 @@
-import React,{useEffect, useState} from "react"
+import React,{useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 import Footer from './footer';
 import {default as BookDetails} from "./bookdetails";
 import "./App";
@@ -58,7 +59,7 @@ return <div>
                 <h1>{result}</h1>
                 {books.map((book)=>(
                     <div className="book">
-                        <img onClick={()=>{BookDetails(book.key)}} src={`https://covers.openlibrary.org/b/olid/${book.cover_edition_key}-M.jpg`} alt={book.title}></img>
+                        <Link to={`/booklist/${book.key.substring(7,18)}`}{...book}><img src={`https://covers.openlibrary.org/b/olid/${book.cover_edition_key}-M.jpg`} alt={book.title}></img></Link>
                         <h6>{book.title.length > 25 ? book.title.substring(0,30)+`...`:book.title}</h6>
                         <h5 onClick={()=>{AddToFavourites(book.cover_edition_key,book.title)}}>Add To Favourites 🤍</h5>
                     </div>
