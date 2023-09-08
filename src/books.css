@@ -102,7 +102,7 @@
     }
     .bookdetails{
         width: 95%;
-        height: 100vh;
+        height: 80vh;
         grid-template-columns: 4fr;
         margin-top: 130px;
         margin: 130px 10px 10px 10px;
