@@ -17,22 +17,24 @@ import Footer from './footer';
 import {Route,Routes,BrowserRouter,Switch} from 'react-router-dom';
 import { useEffect, useState,useContext,Navigate} from 'react';
 function App() {
-  const [userName,setUserName] = useState("");
+  const [login,setLogin] = useState(false);
     useEffect(()=>{
         auth.onAuthStateChanged((user)=>{
             if(user)
             {
                 localStorage.setItem("name",user.displayName);
+                localStorage.setItem("email",user.email)
+                setLogin(true)
             }
             else
             {
-                setUserName("");
+                setLogin(false);
             }
         });
     },[])
   return (
     <div className="App">
-          {auth?.currentUser?(<Navbar />):(<Navbar2 />)}
+          {login ? (<Navbar />):(<Navbar2 />)}
           <Routes>
             <Route exact path='/' element={<Home2 />}></Route>
             <Route exact path='/home' element={<Home name={userName}/>}></Route>
