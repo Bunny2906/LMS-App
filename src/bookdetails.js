@@ -15,7 +15,7 @@ function BookDetails()
         {
             axios.get(`${URL}${id}.json`)
             .then((res)=>{setCoverImg(`https://covers.openlibrary.org/b/id/${res.data.covers[0]}-M.jpg`);
-            console.log(res.data);setTitle(res.data.title);setDescription(res.data.description ? (res.data.description):("no description found"))})
+            console.log(res.data);setTitle(res.data.title);setDescription(res.data.description ? ((res.data.description.value?(res.data.description.value):(res.data.description)):("no description found")))})
             .catch((err)=>{console.log(err)});
         }
         getBookDetails();
