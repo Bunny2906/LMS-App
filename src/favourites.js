@@ -6,7 +6,7 @@ import './books.css'
 import {auth} from'./firebase';
 const DisplayFavourites = ()=>{
     const[books,setBooks] = useState([]);
-    const get_eml = auth?.currentUser.email.substring(0,auth?.currentUser.email.length-4);
+    const get_eml = localStorage.getItem("email").substring(0,localStorage.getItem("email").length-4);
     const URL = `https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${get_eml}.json`;
     useEffect(()=>{
         axios.get(URL).then((response)=>{
