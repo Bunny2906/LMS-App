@@ -32,7 +32,7 @@ function Home()
     return( 
         <div className='home'>
             <div className='main'>
-                <h3 className='wlcmnote'>{"Welcome !!"}</h3>
+                <h3 className='wlcmnote'>{`Welcome ${localStorage.getItem("name")}!!`}</h3>
                 <div className='searchTerm'>
                     <input type='text' className='bookinput' placeholder='Search for books' onChange={handleChange}></input>
                     <button onClick={()=>{fetchBooks()}}className='searchBtn'>Search</button>  
