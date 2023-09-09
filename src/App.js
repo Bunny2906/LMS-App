@@ -22,7 +22,7 @@ function App() {
         auth.onAuthStateChanged((user)=>{
             if(user)
             {
-                setUserName(user.displayName);
+                localStorage.setItem("name",user.displayName);
             }
             else
             {
