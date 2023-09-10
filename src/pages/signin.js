@@ -18,7 +18,6 @@ function Signin()
         signInWithEmailAndPassword(auth,username,password)
         .then((userCred)=>{console.log(userCred);localStorage.setItem('token',userCred);alert("login success "+auth?.currentUser.displayName+" !!");goToHome();})
         .catch((err)=>{console.log(err);alert("Invalid Email-Id or Password")});
-        
     }
     return(
         <div className="signin">
