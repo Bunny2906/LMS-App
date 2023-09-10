@@ -18,8 +18,8 @@ function Signup()
         UserName:username,
         Password:password
     }
-    const goToSignIn = ()=>{
-        navigate("/signin");
+    const goToHome = ()=>{
+        navigate("/home");
     };
 
     const submit=(e)=>
@@ -39,7 +39,9 @@ function Signup()
             .then().catch((err)=>{alert(err)});
         }
         createUserWithEmailAndPassword(auth,username,password)
-        .then(async(response)=>{console.log(response);goToSignIn();
+        .then(async(response)=>{console.log(response);goToHome();
+        localStorage.setItem('token',"logged in");
+        localStorage.setItem("name",name);
         const user = response.user;
         await updateProfile(user,{displayName:details.Name});
         })
