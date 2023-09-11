@@ -34,25 +34,44 @@ const BookList = ()=>{
         src:"",
         title:""
     })
-    let favArray=[];
+    function Includes(list,obj)
+    {
+        if(list.some(({title})=>title === obj.title))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    const [favArray,setFavArray]=useState([]);
     const {email,src,title}=data;
-    const [added,setAdded] = useState(false);
     const AddToFavourites =(book_key,book_title)=>{
             data.email = auth?.currentUser.email;
             data.src = `https://covers.openlibrary.org/b/olid/${book_key}-M.jpg`;
             data.title = book_title;
             console.log(data);
             const post_eml = data.email.substring(0,data.email.length-4);
-            /*axios.get(`https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${post_eml}.json`)
-            .then((response)=>{favArray = Object.values(response.data);console.log(favArray,favArray.includes(data))}).catch((err)=>{console.log(err)})
-            if(favArray.includes(data))
-            {
-                alert("Book already exists in your favourites list !!")
-            }
-            else
-            {}*/
-            axios.post(`https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${post_eml}.json`,data)
-            .then(alert("Added successfully !!")).catch((err)=>{console.log(err)});
+            axios.get(`https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${post_eml}.json`)
+            .then((response)=>{
+                if(response.data)
+                {
+                    console.log(response.data);
+                    setFavArray(Object.values(response.data));
+                    console.log(Includes(Object.values(response.data),data))
+                }
+                if(response.data && Includes(Object.values(response.data),data))
+                {
+                    alert("Book already exists in your favourites list !!")
+                }
+                else
+                {
+                    axios.post(`https://fav-books-27775-default-rtdb.firebaseio.com/favbooks-${post_eml}.json`,data)
+                    .then(alert("Added successfully !!")).catch((err)=>{console.log(err)});
+                }
+                })
+            .catch((err)=>{console.log(err)});
         }
 return <div>
             <div className="booklist">
