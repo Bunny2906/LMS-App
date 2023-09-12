@@ -163,7 +163,7 @@ h4 button{
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 600px;
 }
 .searchTerm input{
@@ -290,7 +290,7 @@ div h5{
         font-size: 15px;
     }
     .main .searchTerm{
-        width: 200px;
+        width: 300px;
     }
     .searchTerm button{
         right: 40px;
