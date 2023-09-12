@@ -73,10 +73,41 @@ body{
 }
 .logoutpage{
     background: linear-gradient(120deg,#fcf4d4,#f2c1be);
-    height: 100vh;
+    height:170vh;
 }
-.logoutpage h1{
-    padding:100px 20px 20px 20px;
+.logoutpage h4{
+    align-items: right;
+    text-align: right;
+    padding-right: 50px;
+    color: rgb(0, 0, 0);
+}
+h4 button{
+    color: white;
+    background-color: black;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 5px;
+}
+.maintext{
+    font-size: 55px;
+    padding-top: 80px;
+    background: linear-gradient(to right, #6def35, #32d0cd,#432edd, #d90707);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.first img{
+    height: 200px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.first img:hover{
+    transform: scale(1.1);
+    z-index: inherit;
 }
 .signin,.signup,.admin{
     width: 400px;
@@ -216,9 +247,22 @@ div h5{
     .right,.right2{
         margin-right:0px;
     }
+    .logoutpage{
+        height: 200vh;
+    }
     .logoutpage h1{
         padding:70px 10px 10px 10px;
         font-size: 26px;
+    }
+    .maintext{
+        font-size: 26px;
+    }
+    .first{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .first img{
+        height: 100px;
+        width: 75px;
     }
     .signin,.signup,.admin{
         width: 70%;
