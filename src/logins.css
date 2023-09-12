@@ -295,13 +295,15 @@ div h5{
         font-size: 15px;
     }
     .searchTerm input{
-        width: 50%;
+        width: 65%;
         height: 30px;
         padding-left: 10px;
         padding-right: 50px;
+        margin-left:20px;
     }
     .searchTerm button{
         padding: 8.2px 30px;
+        right: 20px;
     }
     .main input::placeholder{
         font-size: 14px;
