@@ -298,12 +298,12 @@ div h5{
         width: 65%;
         height: 30px;
         padding-left: 10px;
-        padding-right: 50px;
-        margin-left:20px;
+        padding-right: 40px;
+        margin-left:25px;
     }
     .searchTerm button{
         padding: 8.2px 30px;
-        right: 20px;
+        right: 25px;
     }
     .main input::placeholder{
         font-size: 14px;
