@@ -251,13 +251,13 @@ div h5{
     .logoutpage{
         height: 150vh;
     }
-    .logoutpage h1{
-        padding:30px 10px 10px 10px;
-        font-size: 26px;
-    }
     .maintext{
         font-size: 24px;
         padding:80px 10px 10px 10px;
+    }
+    .logoutpage h1{
+        padding:30px 10px 10px 10px;
+        font-size: 26px;
     }
     .first{
         grid-template-columns: 1fr 1fr 1fr 1fr;
