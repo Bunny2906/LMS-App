@@ -287,7 +287,7 @@ div h5{
         margin-top: 130px;
         font-size: 15px;
     }
-    .main .searchTerm{
+    .main .searchTerm input{
         width: 250px;
     }
     .searchTerm button{
