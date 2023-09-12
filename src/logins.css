@@ -159,18 +159,34 @@ h4 button{
     margin-top: 0px;
     padding: 20px 0px 20px 0px;
 }
+.searchTerm
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchTerm input{
+    height: 40px;
+    width: 400px;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-left: 25px;
+}
 .searchTerm button{
     padding: 12.5px 30px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 16px;
     background: black;
     color: white;
     border: none;
     position: relative;
+    right: 50px;
 }
 .main input::placeholder{
     font-size: 18px;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 .popbooks{
     margin-top: 20px;
@@ -277,6 +293,13 @@ div h5{
     .wlcmnote{
         margin-top: 130px;
         font-size: 15px;
+    }
+    .searchTerm input{
+        width: 40%;
+        height: 30px;
+    }
+    .searchTerm button{
+        padding: 8.5px 30px;
     }
     .main input::placeholder{
         font-size: 14px;
