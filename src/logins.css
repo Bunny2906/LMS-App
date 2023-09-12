@@ -71,6 +71,13 @@ body{
     margin: 10px;
     font-size: 18px;
 }
+.logoutpage{
+    background: linear-gradient(120deg,#fcf4d4,#f2c1be);
+    height: 100vh;
+}
+.logoutpage h1{
+    padding-top: 100px;
+}
 .signin,.signup,.admin{
     width: 400px;
     margin: auto;
@@ -176,9 +183,6 @@ body{
 }
 div h5{
     margin-top: 5px;
-}
-.logoutpage{
-    margin-top: 100px;
 }
 .footer{
     background-color: rgb(248, 248, 245);
