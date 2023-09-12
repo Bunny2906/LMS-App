@@ -37,7 +37,7 @@ function App() {
           {login ? (<Navbar />):(<Navbar2 />)}
           <Routes>
             <Route exact path='/' element={login ? (<Home />):(<Home2 />)}></Route>
-            <Route exact path='/home' element={<Home />}></Route>
+            <Route exact path='/home' element={login ? (<Home />):(<Home2 />)}></Route>
             <Route exact path={'/signin'} element={<Signin></Signin>}></Route>
             <Route exact path="/signup" element={<Signup />}></Route>
             <Route exact path="/admin" element={<Admin />}></Route>
