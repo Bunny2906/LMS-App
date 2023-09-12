@@ -34,7 +34,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-right: 20px;
 }
 .right li,.right2 li{
     list-style-type: none;
