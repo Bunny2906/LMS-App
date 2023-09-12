@@ -172,7 +172,7 @@ h4 button{
     border: 1px solid black;
     padding-left: 40px;
     padding-right: 50px;
-    margin-left: 25px;
+    margin-left: 40px;
 }
 .searchTerm button{
     padding: 12.5px 30px;
@@ -182,7 +182,7 @@ h4 button{
     color: white;
     border: none;
     position: relative;
-    right: 50px;
+    right: 40px;
 }
 .main input::placeholder{
     font-size: 18px;
@@ -295,11 +295,13 @@ div h5{
         font-size: 15px;
     }
     .searchTerm input{
-        width: 40%;
+        width: 50%;
         height: 30px;
+        padding-left: 10px;
+        padding-right: 50px;
     }
     .searchTerm button{
-        padding: 8.5px 30px;
+        padding: 8.2px 30px;
     }
     .main input::placeholder{
         font-size: 14px;
