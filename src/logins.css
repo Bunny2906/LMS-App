@@ -248,17 +248,18 @@ div h5{
         margin-right:0px;
     }
     .logoutpage{
-        height: 200vh;
+        height: 150vh;
     }
     .logoutpage h1{
-        padding:70px 10px 10px 10px;
+        padding:30px 10px 10px 10px;
         font-size: 26px;
     }
     .maintext{
-        font-size: 26px;
+        font-size: 24px;
     }
     .first{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
     }
     .first img{
         height: 100px;
