@@ -42,7 +42,7 @@ const Home2 = () => {
                 <img src={image21}></img>
               </div>
               <h4 >To get more.....<Link to="/signin"><button>Login</button></Link></h4>
-            <h1>“A reader lives a thousand lives before he dies . . . The man who never reads lives only once.”</h1>
+            <h1 className='lasttext'>“A reader lives a thousand lives before he dies . . . The man who never reads lives only once.”</h1>
         </div>
         <Footer />
     </div>
