@@ -148,10 +148,8 @@ h4 button{
 }
 .home{
     height: 100vh;
-    width: 100%;
 }
 .main{
-    width: 100%;
     height: 100vh;
     margin-top: 80px;
     background-color: whitesmoke;
@@ -293,7 +291,7 @@ div h5{
     }
     .main .searchTerm{
         margin-left: 17px;
-        width: 320px;
+        width: 260px;
     }
     .searchTerm button{
         right: 40px;
