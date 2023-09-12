@@ -159,20 +159,6 @@ h4 button{
     margin-top: 0px;
     padding: 20px 0px 20px 0px;
 }
-.searchTerm{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-}
-.searchTerm input{
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding-left: 30px;
-    padding-right: 65px;
-}
 .searchTerm button{
     padding: 12.5px 30px;
     border-radius: 30px;
@@ -292,9 +278,6 @@ div h5{
     .wlcmnote{
         margin-top: 130px;
         font-size: 15px;
-    }
-    .main .searchTerm input{
-        width: 50px;
     }
     .main input::placeholder{
         font-size: 14px;
