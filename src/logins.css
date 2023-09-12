@@ -39,6 +39,8 @@ body{
     list-style-type: none;
     font-size: 20px;
     position: relative;
+}
+.right2 li{
     margin:10px;
 }
 .right li:hover,.right2 li:hover{
@@ -68,7 +70,9 @@ body{
     border: none;
     border-radius: 5px;
     font-size: 17px;
-    margin: 10px;
+}
+.right2 button{
+    margin:10px;
 }
 .logoutpage{
     background: linear-gradient(120deg,#fcf4d4,#f2c1be);
