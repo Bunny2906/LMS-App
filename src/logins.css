@@ -211,13 +211,13 @@ div h5{
     }
     .navbar2 h1{
         margin-left: 10px;
-        font-size: 26px;
+        font-size: 30px;
     }
     .right,.right2{
         margin-right:0px;
     }
     .logoutpage h1{
-    padding:80px 10px 10px 10px;
+        padding:70px 10px 10px 10px;
     }
     .signin,.signup,.admin{
         width: 70%;
