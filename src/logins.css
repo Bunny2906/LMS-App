@@ -290,7 +290,7 @@ div h5{
         font-size: 15px;
     }
     .main .searchTerm{
-        width: 50%;
+        width: 200px;
     }
     .searchTerm button{
         right: 40px;
