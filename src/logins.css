@@ -246,7 +246,7 @@ div h5{
         margin-right:0px;
     }
     .logoutpage{
-        height: 120vh;
+        height: 140vh;
     }
     .maintext{
         font-size: 24px;
@@ -292,7 +292,7 @@ div h5{
     }
     .main .searchTerm{
         margin-left: 17px;
-        width: 260px;
+        width: 60px;
     }
     .searchTerm button{
         right: 40px;
