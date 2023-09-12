@@ -39,8 +39,6 @@ body{
     list-style-type: none;
     font-size: 20px;
     position: relative;
-}
-.right2 li{
     margin:10px;
 }
 .right li:hover,.right2 li:hover{
@@ -70,8 +68,6 @@ body{
     border: none;
     border-radius: 5px;
     font-size: 17px;
-}
-.right2 button{
     margin:10px;
 }
 .logoutpage{
@@ -282,8 +278,12 @@ div h5{
     .signin p,.signup p{
         font-size: 12px;
     }
+    .right li{
+        margin:0px 0px 10px 0px;
+    }
     .right button{
-        font-size: 18px;
+        font-size: 16px;
+        margin:0px 0px 10px 0px;
     }
     .main{
         height: 300vh;
@@ -295,9 +295,6 @@ div h5{
     }
     .main .searchTerm input{
         width: 50px;
-    }
-    .searchTerm button{
-        right: 40px;
     }
     .main input::placeholder{
         font-size: 14px;
