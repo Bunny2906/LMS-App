@@ -74,6 +74,7 @@ body{
 .logoutpage{
     background: linear-gradient(120deg,#fcf4d4,#f2c1be);
     height:170vh;
+    width: 105%;
 }
 .logoutpage h4{
     align-items: right;
