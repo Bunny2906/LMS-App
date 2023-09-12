@@ -167,7 +167,6 @@ h4 button{
     color: white;
     border: none;
     position: relative;
-    right: 50px;
 }
 .main input::placeholder{
     font-size: 18px;
