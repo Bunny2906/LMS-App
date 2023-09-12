@@ -216,6 +216,9 @@ div h5{
     .right,.right2{
         margin-right:0px;
     }
+    .logoutpage h1{
+    padding:80px 10px 10px 10px;
+    }
     .signin,.signup,.admin{
         width: 70%;
     }
