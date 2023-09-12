@@ -39,7 +39,6 @@ body{
 .right li,.right2 li{
     list-style-type: none;
     font-size: 20px;
-    padding: 5px;
     position: relative;
 }
 .right li:hover,.right2 li:hover{
@@ -74,7 +73,7 @@ body{
 .logoutpage{
     background: linear-gradient(120deg,#fcf4d4,#f2c1be);
     height:170vh;
-    width: 105%;
+    width: 100%;
 }
 .logoutpage h4{
     align-items: right;
