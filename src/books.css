@@ -86,7 +86,7 @@
     .booklist{
         grid-template-columns: repeat(2,1fr);
         padding-left: 0;
-        width: 110%;
+        width: 100%;
     }
     .booklist h1{
         font-size: 22px;
