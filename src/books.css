@@ -109,7 +109,7 @@
         grid-template-columns: 4fr;
         grid-template-rows: 0.1fr 2fr 0.5fr 1.5fr 1.2fr;
         margin-top: 130px;
-        margin: 130px 10px 10px 10px;
+        margin: 130px 10px 0px 10px;
     }
     .bookdetails img{
         grid-area: 2/1/3/3;
@@ -131,6 +131,5 @@
     }
     .subjects{
         grid-area: 4/1/5/3;
-        margin-bottom: 120px;
     }
 }
