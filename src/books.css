@@ -113,7 +113,7 @@
     .bookdetails img{
         grid-area: 2/1/3/3;
         margin: auto;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
     .title{
         font-size: 18px;
@@ -124,14 +124,14 @@
         font-size: 100px;
         grid-area: 3/1/4/3;
         font-size: 7px;
-        margin-bottom: 100px;
+        margin-bottom: 160px;
     }
     .author{
         grid-area: 3/1/4/3;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
     .subjects{
         grid-area: 4/1/5/3;
-        margin-bottom: 60px;
+        margin-bottom: 120px;
     }
 }
