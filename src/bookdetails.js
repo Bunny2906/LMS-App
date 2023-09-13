@@ -29,8 +29,8 @@ function BookDetails()
                     <h2 className="title">{title}</h2>
                     <img src={coverImg} alt={title}></img>
                     <p className="description"><u><h3>Description :</h3></u>{description}</p>
-                    <h3><u>Author:</u>{" "+authorName}</h3>
-                    <h4><u>Subjects:</u>{subjects? subjects.join(", "):" No subjects found"}</h4>
+                    <h3 className="author"><u>Author:</u>{" "+authorName}</h3>
+                    <h4 className="subjects"><u>Subjects:</u>{subjects? "  "+subjects.join("/"):" No subjects found"}</h4>
                 </div>
            </div>
 }
