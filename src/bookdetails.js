@@ -8,23 +8,29 @@ function BookDetails()
     const [description,setDescription] = useState("");
     const [title,setTitle] = useState("");
     const [coverImg,setCoverImg] = useState("");
+    const [subjects,setSubjects] = useState([]);
+    const [authorKey,setAuthorKey] = useState("");
+    const [authorName,setAuthorName] = useState("");
     const URL = `https://openlibrary.org/works/`;
-    let response;
     useEffect(()=>{
         function getBookDetails()
         {
             axios.get(`${URL}${id}.json`)
             .then((res)=>{setCoverImg(`https://covers.openlibrary.org/b/id/${res.data.covers[0]}-M.jpg`);
-            console.log(res.data);setTitle(res.data.title);setDescription(res.data.description ? (res.data.description):("no description found"))})
-            .catch((err)=>{console.log(err)});
+            setTitle(res.data.title);
+            setDescription(res.data.description ? (res.data.description):("No description found"));
+            setSubjects(res.data.subjects.slice(0,10));setAuthorKey(res.data.authors[0].author.key.substring(9,19));console.log(authorKey);}).catch((err)=>{console.log(err)});
         }
         getBookDetails();
     },[id])
+    axios.get(`https://openlibrary.org/authors/${authorKey}.json`).then((response)=>{console.log(response.data);setAuthorName(response.data.personal_name)})
     return <div>
-                <div className="bookdetails">
+               <div className="bookdetails">
                     <h2 className="title">{title}</h2>
                     <img src={coverImg} alt={title}></img>
                     <p className="description"><u><h3>Description :</h3></u>{description}</p>
+                    <h3><u>Author:</u>{" "+authorName}</h3>
+                    <h4><u>Subjects:</u>{subjects? subjects.join(", "):" No subjects found"}</h4>
                 </div>
            </div>
 }
