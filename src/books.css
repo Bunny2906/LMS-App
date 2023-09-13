@@ -81,7 +81,7 @@
     margin: auto;
 }
 .title,h3 u,h4 u,p u h3{
-    background: linear-gradient(to right, #f65757, #6132d0,#10a21c, #001205);
+    background: linear-gradient(to right, #f65757, #6132d0,#10a21c, #000000);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
