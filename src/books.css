@@ -81,7 +81,7 @@
     margin: auto;
 }
 .title,h3 u,h4 u,p u h3{
-    background: linear-gradient(to right, #f65757, #6132d0,#10a21c, #011206);
+    background: linear-gradient(to right, #f65757, #6132d0,#10a21c, #001205);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -122,12 +122,11 @@
         width: 85%;
         text-align: justify;
         font-size: 100px;
-        grid-area: 3/1/4/3;
+        grid-area: 4/1/5/3;
         font-size: 7px;
     }
     .author{
         grid-area: 3/1/4/3;
-        margin-bottom: 90px;
     }
     .subjects{
         grid-area: 5/1/6/3;
