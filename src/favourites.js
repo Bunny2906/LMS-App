@@ -29,6 +29,7 @@ const DisplayFavourites = ()=>{
                         <img src={book.src} ></img>
                         <h6>{book.title.length > 25 ? book.title.substring(0,30)+`...`:book.title}</h6>
                         <h5 onClick={()=>{DeleteFavourites(books.indexOf(book))}}>Remove From Favourites💔</h5>
+                        <h3>{books.length === 0 ?("No added favourites"):("")}</h3>
                     </div>
                 ))}
             </div>
