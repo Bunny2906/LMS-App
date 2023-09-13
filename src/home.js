@@ -26,8 +26,15 @@ function Home()
         setSearchItem(e.target.value);
     }
     const fetchBooks = (e)=>{
-        localStorage.setItem('searchInput',searchItem);
-        navigate('/booklist')
+       if(searchItem.length === 0)
+        {
+            alert("Please enter a book name !!")
+        }
+        else
+        {
+            localStorage.setItem('searchInput',searchItem);
+            navigate('/booklist');
+        }
     }
     return( 
         <div className='home'>
