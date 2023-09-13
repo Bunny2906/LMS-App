@@ -80,7 +80,7 @@
     grid-area: 2/1/3/2;
     margin: auto;
 }
-.title,h3 u,h4 u,p u{
+.title,h3 u,h4 u,p u h3{
     background: linear-gradient(to right, #6def35, #32d0cd,#432edd, #d90707);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
