@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { useNavigate,useParams} from "react-router-dom";
+import Footer from './footer';
 import './books.css';
 import axios from 'axios';
 function BookDetails()
@@ -32,6 +33,7 @@ function BookDetails()
                     <h3 className="author"><u>Author:</u>{" "+authorName}</h3>
                     <h4 className="subjects"><u>Subjects:</u>{subjects? "  "+subjects.join("/"):" No subjects found"}</h4>
                 </div>
+                <Footer />
            </div>
 }
 export default BookDetails;
