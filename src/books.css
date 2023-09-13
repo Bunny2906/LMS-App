@@ -81,7 +81,7 @@
     margin: auto;
 }
 .title,h3 u,h4 u,p u h3{
-    background: linear-gradient(to right, #6def35, #32d0cd,#432edd, #d90707);
+    background: linear-gradient(to right, #f65757, #6132d0,#10a21c, #011206);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -105,7 +105,7 @@
     }
     .bookdetails{
         width: 95%;
-        height: 100vh;
+        height: 95vh;
         grid-template-columns: 4fr;
         grid-template-rows: 0.1fr 2fr 0.5fr 1.5fr 1.2fr;
         margin-top: 130px;
