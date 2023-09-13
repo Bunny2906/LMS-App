@@ -46,7 +46,7 @@ function Signup()
             })
             .catch(err=>alert(err));
             console.log("submitted");
-            }
+        }
     }
     return(
         <div className="signup">
