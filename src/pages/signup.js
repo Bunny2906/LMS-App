@@ -37,16 +37,16 @@ function Signup()
         {
             axios.post(`https://lmsapp-31da4-default-rtdb.firebaseio.com/userDetails.json`,details)
             .then().catch((err)=>{alert(err)});
-        }
-        createUserWithEmailAndPassword(auth,username,password)
-        .then(async(response)=>{console.log(response);goToHome();
-        localStorage.setItem('token',"logged in");
-        localStorage.setItem("name",name);
-        const user = response.user;
-        await updateProfile(user,{displayName:details.Name});
-        })
-        .catch(err=>alert(err));
-        console.log("submitted");
+            createUserWithEmailAndPassword(auth,username,password)
+            .then(async(response)=>{console.log(response);goToHome();alert("Account created successfully");
+            localStorage.setItem('token',"logged in");
+            localStorage.setItem("name",name);
+            const user = response.user;
+            await updateProfile(user,{displayName:details.Name});
+            })
+            .catch(err=>alert(err));
+            console.log("submitted");
+            }
     }
     return(
         <div className="signup">
